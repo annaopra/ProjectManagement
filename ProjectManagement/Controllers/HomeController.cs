@@ -9,6 +9,16 @@ namespace ProjectManagement.Controllers
 {
     public class HomeController : Controller
     {
+        public double Average()
+        {
+            var list = new List<int> { 1, 3, 7 };
+            //return list.Average();
+            int sum = 0;
+            foreach (int x in list)
+                sum += x;
+            return sum / list.Count;
+        }
+
         public ActionResult Index()
         {
             return View();
