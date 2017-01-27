@@ -12,5 +12,12 @@ namespace ProjectManagement.Controllers
         {
             return Content("Hello world!");
         }
+
+        public ActionResult HelloUser(string alpha)
+        {
+            
+            return Content("Hello "+ alpha);
+           
+        }
     }
 }
