@@ -24,6 +24,11 @@ namespace ProjectManagement.Controllers
             return Content("HelloWorld");
         }
 
+        public ActionResult RedirectToRoute()
+        {
+            return Content("");
+        }
+
         public ActionResult Index()
         {
             return View();
